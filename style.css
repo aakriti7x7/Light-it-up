@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    background: rgb(2, 12, 58);
+    min-height: 150vh;
+    width: 100%;
+    color: white;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+nav .menui{
+    width: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* nav .logo{
+    width: 50px;
+} */
+
+nav ul{
+    flex: 1;             /* new */
+    text-align: right;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    background: #ffffff;
+    height: 25px;
+    width: 50px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.5s;       /* new */
+}
+button span{
+    display: block;
+    background: rgb(83, 74, 74);
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-left: 1px;
+    transition: background 0.5s, margin-left 0.5s;
+}
+
+.lampcontainer{
+    position: absolute;
+    top: 0;
+    left: 22%;
+    width: 200px;
+}
+
+.lamp{
+    width: 100%;
+}
+
+.light{
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    transform: translateX(-50%);                /* new */
+    width: 400%; 
+    margin-left: -10px;                         /* new */
+    opacity: 0;
+    transition: opacity 0.5s;                   /* new */
+}
+
+.text{
+    max-width: 600px;
+    margin-top: 8%;
+    margin-left: 50%;
+}
+
+.text h1{
+    font-size: 80px;
+    font-weight: 400;
+}
+
+h4{
+    font-size: 17px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+
+/* making class to use in JS */               /* extremely new */
+.active{
+    background: rgb(14, 139, 10);
+}
+
+.active span{
+    background: white;
+    margin-left: 30px;
+}
+
+.on{
+    opacity: 1 ;
+}
